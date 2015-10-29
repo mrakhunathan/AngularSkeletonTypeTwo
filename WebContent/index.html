@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>My Web App</title>
+</head>
+<body>
+Check Console by using F12 to See if Your Application Configuration is set and Controllers are ready
+<!-- Libraries -->
+<script src="scripts/lib/angular.min.js"> </script>
+<!-- Modules -->
+<script src="scripts/app.js"> </script>
+
+<!-- Services -->
+<script src="scripts/ModuleOne/serviceOne.js"> </script>
+<script src="scripts/ModuleOne/serviceTwo.js"> </script>
+<!-- Factories -->
+<script src="scripts/factory/factoryOne.js"> </script>
+
+<!-- Controllers -->
+<script src="scripts/ModuleOne/ModuleOneControllerOne.js"> </script>
+<script src="scripts/ModuleOne/ModuleOneControllerTwo.js"> </script>
+<script src="scripts/ModuleTwo/ModuleTwoControllerOne.js"> </script>
+
+<!--  You can do this inside body tag as well. Depends on your scope requirements -->
+<div ng-app="firstModule">
+		
+		<div ng-controller="firstController">
+		<!-- DOM Actions -->
+	</div>
+	
+	<div ng-controller="secondController">
+	<!-- DOM Actions -->
+	</div>
+</div>
+</body>
+</html>
